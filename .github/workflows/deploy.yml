@@ -2,7 +2,10 @@ name: CI/CD - GoLang Server
 
 on:
   push:
-    branches: [ "mDockerrun.aws.jsonild-test-deploy:
+    branches: [ "main" ]
+
+jobs:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -35,4 +38,3 @@ on:
           environment_name: golang-env
           version_label: v_${{ github.run_number }}
           deployment_package: Dockerrun.aws.json
-
