@@ -1,0 +1,12 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "golang-server",
+      "image": "yourdockerusername/golang-server:latest",
+      "essential": true,
+      "portMappings": [{ "containerPort": 8080 }]
+    }
+  ]
+}
+
